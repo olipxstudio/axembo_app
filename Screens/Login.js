@@ -84,7 +84,6 @@ export default function Login() {
             maxLength={20}
           />
         </View>
-        <View style={styles.Rectangle1} />
       </View>
     </View>
   )

@@ -69,13 +69,6 @@ const styles = StyleSheet.create({
     // lineHeight: 14,
     color: "rgba(0,0,0,1)",
   },
-
-  Rectangle1: {
-    backgroundColor: "rgba(0,0,0,1)",
-    width: 130,
-    height: 5,
-    borderRadius: 9,
-    marginTop:100
-  },
+  
 })
 export default styles;
