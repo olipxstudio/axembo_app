@@ -1,8 +1,9 @@
 import React from "react"
-import {  Image, Text, View} from "react-native"
+import {  Image, Text, View,TouchableOpacity} from "react-native"
 import styles from "./ProfileStyles";
 import { Avatar } from 'react-native-paper';
 import Card from "../components/Card";
+import colors from "../assets/colors/Colors";
 
 
 
@@ -20,7 +21,7 @@ export default function Profile() {
         </View>
 
         <View style={styles.secondView}>
-            <Avatar.Image size={100}  style={{backgroundColor:'grey'}}/>
+            <Avatar.Image size={100}  style={{backgroundColor:colors.lightGrey}}/>
             <Text style={styles.olipxText}>Olipx Studio</Text>
             <View style={styles.emailTextView}>
       
@@ -42,6 +43,58 @@ export default function Profile() {
             <Card text={"How to save items from apps"}/>
             <Card text={"How to save from chrome"}/>            
         </View>
+        <View style={[styles.getStartedView, styles.moreTextView]}>
+             <Text style={styles.getStartedText}>More</Text>
+        </View>
+        <View style={styles.helpView}>
+        <TouchableOpacity style={styles.touchableOpacity}>
+              <Text style={styles.helpText}>
+                Help
+              </Text>
+              <Image
+                        style={styles.ChevronForward}
+                        source={{
+                        uri: "https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/722pubrhq2l-1%3A20?alt=media&token=e79ce507-20f2-4d5c-b8ee-1f060e732b61",
+                        }}
+                    />
+        </TouchableOpacity> 
+        <TouchableOpacity style={styles.touchableOpacity}>
+              <Text style={styles.helpText}>
+                Report an issue
+              </Text>
+              <Image
+                        style={styles.ChevronForward}
+                        source={{
+                        uri: "https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/722pubrhq2l-1%3A20?alt=media&token=e79ce507-20f2-4d5c-b8ee-1f060e732b61",
+                        }}
+                    />
+        </TouchableOpacity> 
+        <TouchableOpacity style={styles.touchableOpacity}>
+              <Text style={styles.helpText}>
+                Give us a feedback
+              </Text>
+              <Image
+                        style={styles.ChevronForward}
+                        source={{
+                        uri: "https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/722pubrhq2l-1%3A20?alt=media&token=e79ce507-20f2-4d5c-b8ee-1f060e732b61",
+                        }}
+                    />
+        </TouchableOpacity> 
+        <TouchableOpacity style={styles.touchableOpacity}>
+              <Text style={styles.helpText}>
+                Terms and conditions
+              </Text>
+              <Image
+                        style={styles.ChevronForward}
+                        source={{
+                        uri: "https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/722pubrhq2l-1%3A20?alt=media&token=e79ce507-20f2-4d5c-b8ee-1f060e732b61",
+                        }}
+                    />
+        </TouchableOpacity> 
+        </View> 
+        <View style={styles.versionView}>
+          <Text style={styles.versionText}>Version 0.01</Text>
+        </View>             
 
     </View>
   )

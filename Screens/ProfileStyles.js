@@ -1,11 +1,12 @@
 import { StyleSheet } from "react-native";
+import colors from "../assets/colors/Colors";
 
 const styles= StyleSheet.create({
     mainContainer:{
         flex:1,
         justifyContent: "flex-start",
         alignItems: "flex-start",
-        backgroundColor: "rgba(244,244,244,1)",
+        backgroundColor: colors.bgColor,
         width:'100%',
         height:'100%',
         padding:20,
@@ -27,7 +28,7 @@ const styles= StyleSheet.create({
         fontSize:14,
         color:'white',
         fontWeight:'600',
-        backgroundColor:'#4C5DF5',
+        backgroundColor:colors.lightBlue,
         height:20,
         width:50,
         textAlign:'center',
@@ -87,6 +88,44 @@ const styles= StyleSheet.create({
         justifyContent:'space-between',
         alignItems:'center',
         // marginHorizontal:10
+      },
+      moreTextView:{
+        marginTop:15
+      },
+      helpView:{
+        width:'100%',
+        marginTop:5,
+        padding:10,
+        paddingLeft:15,
+        backgroundColor:'white',
+        borderRadius:15
+      },
+      helpText:{
+        fontSize:13,
+        fontWeight:'500',
+        
+      },
+      touchableOpacity:{
+        height:30,
+        width:'100%',
+        marginBottom:10,
+        borderBottomWidth:1,
+        borderBottomColor:colors.lightGrey,
+        display:'flex',
+        flexDirection:'row',
+        alignItems:'center',
+        justifyContent:'space-between'
+      },
+      versionView:{
+        width:'100%',
+        justifyContent:'flex-end',
+        alignItems:'center',
+        marginTop:10,
+      },
+      versionText:{
+        fontSize:10,
+        fontWeight:'500',
+        color:'grey'
       }
 })
 export default styles;
