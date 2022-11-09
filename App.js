@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Profile from './Screens/Profile';
 import Send from './Screens/Send'
+import Boards from './Screens/Boards';
 
 
 export default function App() {
@@ -12,7 +13,8 @@ export default function App() {
 
      
     // <Profile/>
-    <Send/>
+    // <Send/>
+    <Boards/>
     // <View style={styles.container}>
     //   <Text style={styles.text}>Welcome To Axembo</Text>
     //   <StatusBar style="auto" />
