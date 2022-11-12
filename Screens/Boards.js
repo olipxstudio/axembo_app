@@ -1,8 +1,11 @@
 import React,{useState} from "react"
-import {  Image, Text, View,FlatList} from "react-native"
+import {  Image, Text, View,FlatList, TouchableOpacity} from "react-native"
 import styles from "./BoardsStyles";
 import { Avatar } from 'react-native-paper';
 import Board from "../components/Board";
+import Icon from "react-native-vector-icons/Ionicons";
+import Add from "../components/Add";
+
 
 
 export default function Boards() {
@@ -24,19 +27,41 @@ export default function Boards() {
                 <Text style={styles.subHeading}>Board of my Photos</Text>
             </View>
             <View style={styles.boardView}>
-            <FlatList
-                data={data}
-                renderItem={({item})=>{
-                    return(
+                <FlatList
+                    data={data}
+                    renderItem={({item})=>{
+                        return(
+                            
+                                <Board text={item.name}/>  
                         
-                            <Board text={item.name}/>  
-                       
-                    )
-                }}
-                numColumns={2}
-            />
+                        )
+                    }}
+                    numColumns={2}
+                />
              </View>
-
+             <View style={styles.tabView}>
+                <Icon name="search" size={15} style={styles.icon} color='grey'/>
+                <TouchableOpacity>
+                    <Text style={styles.buttonText}>Photos</Text>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <Text style={styles.buttonText}>Videos</Text>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <Text style={styles.buttonText}>Jame's Wedding</Text>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={()=>{
+                    return(
+                        <View style={styles.addView}> 
+                            <Add/>
+                        </View>
+                    );
+                }}>
+                    <Icon name="add" size={25} style={styles.plusButton}/>
+                </TouchableOpacity>
+                
+             </View>
+             
         </View>
     );
 }

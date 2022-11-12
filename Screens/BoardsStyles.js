@@ -49,6 +49,49 @@ const styles= StyleSheet.create({
         display:'flex',
         flexDirection:'row'
         
+    },
+    tabView:{
+        width:'100%',
+        height:40,
+        backgroundColor:'white',
+        position:'absolute',
+        bottom:10,
+        left:20,
+        justifyContent:'space-around',
+        alignItems:'center',
+        display:'flex',
+        flexDirection:'row',
+        borderRadius:16,
+        
+    },
+    icon:{
+        // position:'absolute',
+        // left:10,
+    },
+    buttonText:{
+        fontSize:13,
+        fontWeight:'500',
+        backgroundColor:colors.lightGrey,
+        paddingHorizontal:10,
+        paddingVertical:2,
+        lineHeight:19,
+        borderRadius:30,
+        textAlign:'center',
+        // marginLeft:5
+    },
+    plusButton:{
+        backgroundColor:colors.orange,
+        borderRadius:19,
+        alignSelf:'center',
+        color:'white'
+       
+    },
+    addView:{
+        position:'absolute',
+        bottom:80,
+        right:20,
+        backgroundColor:'red',
+        borderRadius:24
     }
 });
 export default styles;   
