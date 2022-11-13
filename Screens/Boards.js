@@ -5,6 +5,7 @@ import { Avatar } from 'react-native-paper';
 import Board from "../components/Board";
 import Icon from "react-native-vector-icons/Ionicons";
 import Add from "../components/Add";
+import NewBoard from "../components/NewBoard";
 
 
 
@@ -61,6 +62,7 @@ export default function Boards() {
                 </TouchableOpacity>
                 
              </View>
+           
              
         </View>
     );
